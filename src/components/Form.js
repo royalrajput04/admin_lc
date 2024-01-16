@@ -54,7 +54,7 @@ const handleSubmit=  async (e) =>{
       if(data.data.status == 200){
         sessionStorage.setItem('token',data.data.token)
         alert("user found")
-        window.location.href = '/api/dashboard';
+        window.location.href = 'https://lc-lzux.onrender.com/api/dashboard';
         
       }else{
         alert(data.data.message)
